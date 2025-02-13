@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BombGame</title>
+</head>
+<body>
+    <div class="contianer_home">
+        <div class="center_home">
+            <h1><i class="fa-solid fa-b" style="color: var(--forth-color);"></i><i class="fa-solid fa-bomb" style="color:  var(--forth-color);"></i>M<i class="fa-solid fa-b" style="color: var(--forth-color);"></i> GAME</h1>
+            <button id="start"><i class="fa-regular fa-circle-play"></i></button>
+        </div>
+        <div class="chosePlayer">
+            <button id="out"><i class="fa-regular fa-circle-xmark"></i></button>
+            <form action="/html/index_game.html" method="get" class="numPlayer">
+                <ul>
+                    <li>
+                        <input id="player1" type="radio" name="player" value="1" checked>
+                        <label for="player1">PL vs AI</label>
+                    </li>
+                    <li>
+                        <input id="player2" type="radio" name="player" value="0">
+                        <label for="player2">PL vs PL</label>
+                    </li>
+                </ul>
+                <button type="submit" >submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
